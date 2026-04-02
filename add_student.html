@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="f.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Student</h1>
+        <form action="add_student.php" method="post">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="StudentID" required>
+
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="StudentName" required>
+
+            <label for="class-id">Class ID:</label>
+            <input type="text" id="class-id" name="ClassID" required>
+
+            <label for="rfid-card-number">RFID Card Number:</label>
+            <input type="text" id="rfid-card-number" name="RFIDCardNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="qr-code">QR Code:</label>
+            <input type="text" id="qr-code" name="QRCode" required>
+
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+</body>
+</html>

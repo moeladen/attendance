@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter Attendance</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alter Attendance</h1>
+        
+        <section class="add-attendance-section">
+            <h2>Add Attendance</h2>
+            <form action="add_attendance.php" method="post">
+
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="StudentID" required>
+
+                <label for="class-id">Class ID:</label>
+                <input type="text" id="class-id" name="ClassID" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="Date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="Time" required>
+
+                <label for="status">Status:</label>
+                <select id="status" name="Status" required>
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                    <option value="Late">Late</option>
+                </select>
+
+                <label for="teacher-id">Teacher ID:</label>
+                <input type="text" id="teacher-id" name="TeacherID" required>
+
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="Remarks"></textarea>
+
+                <button type="submit">Add Attendance</button>
+            </form>
+        </section>
+
+        <section class="delete-attendance-section">
+            <h2>Delete Attendance</h2>
+            <form action="delete_attendance.php" method="post">
+                <label for="student-id-delete">Student ID:</label>
+                <input type="text" id="student-id-delete" name="StudentID" required>
+
+                <label for="date-delete">Date:</label>
+                <input type="date" id="date-delete" name="Date" required>
+
+                <button type="submit">Delete Attendance</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
